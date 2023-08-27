@@ -15,10 +15,10 @@ export const login = async (userData) => {
     dispatch(fetchStart())
     try {
         const {data} = await axios.post(
-            `${BASE_URL}\account\auth\login\`,userData
+            `${BASE_URL}/account/auth/login/`,userData
         )
         dispatch(loginSuccess(data))
-        toastSuccessNotify("login islemi basarili)
+        toastSuccessNotify("login islemi basarili")
         navigate("/stock")
     } catch (error) {
         consolo.log(error)
