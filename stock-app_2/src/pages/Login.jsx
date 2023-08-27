@@ -18,16 +18,16 @@ const Login = () => {
     //? harici validasyon şeması
     const loginSchema = object({
         email: string()
-         .email("Lutfen valid bir email giriniz"),
+         .email("Lutfen valid bir email giriniz")
          .required("Bu alan zorunludur"),
-        password: string()
+         password: string()
         .required("Bu alan zorunludur")
         .min(8, "En az 8 karakter girilmelidir")
         .max(16, "En fazla 16 karakter girilmelidir")
         .matches(/\d+/, "En az bir rakam içermelidir")
         .matches(/[a-z]/, "En az bir küçük harf içermelidir")
         .matches(/[A-Z]/, "En az bir büyük harf içermelidir.")
-        .matches(/[!,?{}><%&$#£+-.]+/,"En az bir özel karakter içermelidir"),
+        .matches(/[!,?{}><%&$#£+-.]+/,"En az bir özel karakter içermelidir")
 
     })
 return (
