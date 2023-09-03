@@ -30,8 +30,12 @@ const authSlice = createSlice({
       state.token = payload?.token;
       state.error = true;
     },
+    fetchFail: (state) => {
+      state.loading = false;
+      state.error = true;
+    },
   },
-});
+}); 
 
 export const {
   fetchStart,
