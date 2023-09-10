@@ -1,9 +1,9 @@
 import Avatar from "@mui/material/Avatar";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/matrial/Typograghy";
-import LockIcon from "@mui/material/Lock";
-import image from "../assets/results.svg";
+// import Typography from "@mui/matrial/Typograghy";
+// import LockIcon from "@mui/material/Lock";
+// import image from "../assets/results.svg";
 import { Link, useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";

@@ -1,8 +1,8 @@
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
-import LockIcon from "@mui/material/Lock";
-import image from "../assets/result.svg";
+// import LockIcon from "@mui/material/Lock";
+// import image from "../assets/result.svg";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
