@@ -1,8 +1,8 @@
 import Avatar from "@mui/material/Avatar";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-// import Typography from "@mui/matrial/Typograghy";
-// import LockIcon from "@mui/material/Lock";
+import Typography from "@mui/material/Typograghy";
+import LockIcon from "@mui/icons-material/Lock";
 // import image from "../assets/results.svg";
 import { Link, useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
@@ -54,7 +54,7 @@ const Login = () => {
               height: 40,
             }}
           >
-            <LockIcon size="30" />
+            <LockIcon fontSize="large" />
           </Avatar>
           <Typography
             variant="h4"
@@ -75,14 +75,14 @@ const Login = () => {
           >
             {({ handleChange, handleBlur, values, touched, errors }) => (
               <Form>
-                <Box sx={{ display: "flex", flexdirection: "column", gap: 2 }}>
+                <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
                   <TextField
                     label="Email"
                     name="email"
                     id="email"
                     type="email"
                     variant="outlined"
-                    onChanged={handleChange}
+                    onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.email}
                     error={touched.email && Boolean(errors.email)}
@@ -90,7 +90,7 @@ const Login = () => {
                   />
 
                   <TextField
-                    label="password"
+                    label="Password"
                     name="password"
                     id="password"
                     type="password"
